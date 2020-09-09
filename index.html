@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <h1>Type something. And i shall vanish</h1>
+    <input onkeyup="doSomethingCool()" class="username">
+    <button onclick="doSomethingCool()">Send</button>
+    <script>
+      function doSomethingCool() {
+        const name = document.querySelector('.username').value
+        document.querySelector('h1').textContent = name
+      }
+    </script>
+
+</body>
+
+</html>
